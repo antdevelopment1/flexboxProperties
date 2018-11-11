@@ -25,30 +25,48 @@
 
 
 .box {
-  font-size: 50px;
+  font-size: 10px;
   color: white;
   padding: 10px;
   text-align:center;
   font-family: lato;
   font-weight: 300;
   box-sizing: border-box;
+  /* 1w. There needs to be a width in order for you to notice flex-wrap. If we don't use flex wrap no matter how big we try to make our boxes the flex container doesn't allow it.  */
+  width: 500px;
 }
 
-.box-1 {background: #e51400; }
+.box-1 {background: #e51400;}
 .box-2 {background: #fa6800;}
-.box-3 {background: #f0a30a; }
-.box-4 {background: #e3c800; }
+.box-3 {background: #f0a30a;}
+.box-4 {background: #e3c800;}
 .box-5 {background: #a4c400;}
 .box-6 {background: #60a917;}
 .box-7 {background: #00aba9;}
 .box-8 {background: #1ba1e2;} 
 .box-9 {background: #aa00ff;}
 
-/*  LAYOUT STYLES */
-
+/* ==================================== */
+/*  Flex Direction Rules / Observations */
+/* ==================================== */
 /* display-flex will make a header, nav, or section a flex container */
+/* Display flex in this example will makes the rows  vertical*/
+/* A flex item is something inside a flex container */
+/* Default for flex-direction is flex-direction:row */
 .container {
   display: flex;
-  border: 20px solid black;
+  flex-direction:  column;
+  border: 10px solid black;
   height: 90vh;
 }
+
+/* ==================== */
+/*      Flex Wrap       */
+/* ==================== */
+/* Default for flex-wrap is flex-wrap: no wrap; */
+/* If we use flex-wrap: wrap  */
+.container {
+    /* 1w. Width - There needs to be a width in order for you to notice flex-wrap. If we don't use flex wrap no matter how big we try to make our boxes the flex container doesn't allow it.  */
+    flex-wrap: wrap;
+}
+
