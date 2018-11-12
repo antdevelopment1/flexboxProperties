@@ -1,2 +1,2 @@
 # flexboxProperties 
-# Flex Properties
+# Flex Properties - Properties For Flex Containers vs.Flex Items
