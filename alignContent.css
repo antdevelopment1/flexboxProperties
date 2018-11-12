@@ -21,7 +21,7 @@
 --align-self
 */
 
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+/* @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
 
 .box {
@@ -33,11 +33,11 @@
   font-weight: 300;
   box-sizing: border-box;
   /* 1w. There needs to be a width in order for you to notice flex-wrap. If we don't use flex wrap no matter how big we try to make our boxes the flex container doesn't allow it.  */
-  width: 300px;
-  outline: solid 1px blue;
- }
+  /* width: 300px; */
+  /* outline: solid 1px blue; */
+ /* } */
 
-.box-1 {background: #e51400;}
+/* .box-1 {background: #e51400;}
 .box-2 {background: #fa6800;}
 .box-3 {background: #f0a30a;}
 .box-4 {background: #e3c800;}
@@ -54,4 +54,4 @@
     flex-wrap: wrap;
     align-content: space-between;
     justify-content: center;
-}
+} */ 
