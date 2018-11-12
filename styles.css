@@ -33,7 +33,7 @@
   font-weight: 300;
   box-sizing: border-box;
   /* 1w. There needs to be a width in order for you to notice flex-wrap. If we don't use flex wrap no matter how big we try to make our boxes the flex container doesn't allow it.  */
-  width: 15%;
+  width: 5%;
   outline: solid 1px blue;
 }
 
@@ -59,8 +59,8 @@
   flex-direction:  column;
   border: 10px solid black;
   /* If we to use flex-wrap: wrap-reverse on a column then we need to make sure set a min height in the container if we find that nothing changes. */
-  /* We need our divs/boxes to overflow and that cannot happen if our container is bigger than our boxes height. We will never see the overflow*/
-  height: 100px;
+  /*2.wrap We need our divs/boxes to overflow and that cannot happen if our container is bigger than our boxes height. We will never see the overflow*/
+  height: 150px;
 }
 
 /* ==================== */
@@ -70,7 +70,15 @@
 /* If we use flex-wrap: wrap  */
 .container {
     /* 1w. Width - There needs to be a width in order for you to notice flex-wrap. If we don't use flex wrap no matter how big we try to make our boxes the flex container doesn't allow it.  */
-    flex-wrap: wrap-reverse;
+    /* 2.wrap */
+    flex-wrap: wrap;
     
+}
+
+/* ==================== */
+/*    Justify Content       */
+/* ==================== */
+.container {
+    justify-content: center;
 }
 
