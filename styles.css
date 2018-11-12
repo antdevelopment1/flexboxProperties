@@ -21,7 +21,7 @@
 --align-self
 */
 
-@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+/* @import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
 
 
 .box {
@@ -33,11 +33,11 @@
   font-weight: 300;
   box-sizing: border-box;
   /* 1w. There needs to be a width in order for you to notice flex-wrap. If we don't use flex wrap no matter how big we try to make our boxes the flex container doesn't allow it.  */
-  width: 5%;
-  outline: solid 1px blue;
-}
+  /* width: 5%; */
+  /* outline: solid 1px blue; */
+/* } */
 
-.box-1 {background: #e51400;}
+/* .box-1 {background: #e51400;}
 .box-2 {background: #fa6800;}
 .box-3 {background: #f0a30a;}
 .box-4 {background: #e3c800;}
@@ -45,7 +45,7 @@
 .box-6 {background: #60a917;}
 .box-7 {background: #00aba9;}
 .box-8 {background: #1ba1e2;} 
-.box-9 {background: #aa00ff;}
+.box-9 {background: #aa00ff;} */
 
 /* ==================================== */
 /*  Flex Direction Rules / Observations */
@@ -54,31 +54,60 @@
 /* Display flex in this example will makes the rows  vertical*/
 /* A flex item is something inside a flex container */
 /* Default for flex-direction is flex-direction:row */
-.container {
+/* .container {
   display: flex;
   flex-direction:  column;
-  border: 10px solid black;
+  border: 10px solid black; */
   /* If we to use flex-wrap: wrap-reverse on a column then we need to make sure set a min height in the container if we find that nothing changes. */
   /*2.wrap We need our divs/boxes to overflow and that cannot happen if our container is bigger than our boxes height. We will never see the overflow*/
-  height: 150px;
-}
+  /* height: 150px; */
+/* } */
 
 /* ==================== */
 /*      Flex Wrap       */
 /* ==================== */
 /* Default for flex-wrap is flex-wrap: no wrap; */
 /* If we use flex-wrap: wrap  */
-.container {
+/* .container { */
     /* 1w. Width - There needs to be a width in order for you to notice flex-wrap. If we don't use flex wrap no matter how big we try to make our boxes the flex container doesn't allow it.  */
     /* 2.wrap */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     
-}
+/* } */ 
 
 /* ==================== */
 /*    Justify Content       */
 /* ==================== */
-.container {
+/* .container {
     justify-content: center;
+    height: ;
+} */
+
+/* Sidebar */
+body {
+    margin: 0;
 }
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    height: 100vh;
+    width: 10vw;
+    background-color: rgba(0, 0, 0, .8);
+    /* outline: 3px solid orange;   */
+}
+
+.item {
+
+    padding: 10px 40px;
+    color: rgba(255, 255, 255, .7);
+    font-size: 14px;
+    background-color: teal;
+    border: 1px solid rgba(248, 197, 197, 0.7);
+    /* outline: 1px solid pink; */
+}
+
+
 
