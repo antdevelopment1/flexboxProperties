@@ -94,17 +94,18 @@ body {
     flex-wrap: wrap;
     /* align-items: center; */
     height: 100vh;
-    width: 10vw;
-    background-color: rgba(0, 0, 0, .8);
+    width: 30vw;
+    background-color: rgba(0, 0, 0, .2);
     /* outline: 3px solid orange;   */
 }
 
 .item {
 
-    padding: 10px 40px;
+    padding: 20px 20px;
+    text-align: center;
     color: rgba(255, 255, 255, .7);
-    font-size: 14px;
-    background-color: teal;
+    font-size: 16px;
+    background-color: rgba(0, 128, 128, 0.7);
     border: 1px solid rgba(248, 197, 197, 0.7);
     /* outline: 1px solid pink; */
 }
